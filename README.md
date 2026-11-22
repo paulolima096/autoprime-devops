@@ -8,8 +8,13 @@
   
 # Link do site
 ```
-https://autoprime-app-grupo9.azurewebsites.net/
+https://autoprime-devops-hjcmabbxckebascb.canadacentral-01.azurewebsites.net/
 ```
+
+## Deploy no Azure
+- O workflow `.github/workflows/main_autoprime-devops.yml` publica automaticamente quando há push para `main`.
+- Após uma publicação bem-sucedida, `.github/workflows/cd.yml` executa os testes Cypress contra o site publicado.
+- A autenticação do deploy é feita pelo workflow do Azure usando OpenID Connect.
 
 # Tema
 <h4>Loja de venda de veiculos</h4>
